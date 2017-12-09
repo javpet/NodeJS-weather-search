@@ -1,10 +1,9 @@
-// Darksky API 1bb16ddc18dc2c0c7e27c52990a5a0ab
 const request = require("request");
 
 const getWeather = (longitude, latitude, callback) => {
 	request(
 		{
-			url: `https://api.darksky.net/forecast/1bb16ddc18dc2c0c7e27c52990a5a0ab/${longitude},${latitude}?units=si`,
+			url: `https://api.darksky.net/forecast/[YOUR API CODE GOES HERE]/${longitude},${latitude}?units=si`,
 			json: true
 		},
 		(error, response, body) => {
